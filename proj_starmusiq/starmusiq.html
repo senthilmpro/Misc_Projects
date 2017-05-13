@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title> Starmusiq </title>
+	</head>
+	<body>	
+		<div id='urlLinks' ></div>
+		<script>	
+
+			generateLinks();
+			function generateLinks(){
+				var settings = {
+					startIndex : 19129,
+					endIndex : 19518
+				};
+
+				var str = "";
+				for(var i = settings.startIndex ; i <= settings.endIndex ; i++){
+					str += "<div><a href='http://starmusiq.com/download/?songID="+ i +"'>http://starmusiq.com/download/?songID="+ i +"</a></div>";
+				}
+				document.getElementById('urlLinks').innerHTML = str;	
+			}
+		</script>	
+	</body>
+</html>
